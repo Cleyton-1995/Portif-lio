@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="shortcut icon" href="Cleyto S Costa Logo.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    <title>Cleyton S. Costa</title>
+</head>
+
+<body>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+
+    <header class="cabecalho" id="id-cabecalho">
+  
+        <div class="logo">
+           <img src="Cleyto S Costa Logo.png" alt="Logo-eb">
+            <a class="logo-nome" href="#id-main"> Cleyton S. Costa</a>
+        </div>
+
+        <div class="menu">
+          
+            <div class="menu-traco-1"></div>
+            <div class="menu-traco-2"></div>
+            <div class="menu-traco-3"></div>
+ 
+        </div>
+
+        <nav class="nav-itens">    
+            <div>
+                <a class="item i-ini" href="#id-main">Início</a>
+                <hr class="hr-ini">
+            </div>
+
+            <div>
+                <a class="item i-quem" href="#id-quemsou"> Quem sou?</a>
+                <hr class="hr-quem">
+            </div>
+
+            <div>
+                <a class="item i-hab" href="#id-hab"> Habilidades </a>
+                <hr class="hr-hab">
+            </div>
+
+            <div>
+                <a class="item i-proj" href="#id-projetos"> Projetos </a>
+                <hr class="hr-proj">
+            </div>
+
+            <a class="item contato-nav"  href="#id-contatos"> Contatos </a>
+
+            <div>
+                <button class="botao-contato-nav">
+                    <a href="#id-contatos" class="a-botao" id="id-botao"> Contato </a>
+                </button>
+            </div>
+            
+        </nav>
+
+        
+    </header>
+    <script type="text/javascript">
+
+        // var largura = screen.width;
+        // console.log(largura);
+        
+        var contat;
+        var yCont;
+        window.addEventListener("load", function(){
+            contat = document.getElementById("id-contatos");
+            yCont= contat.offsetTop;
+            yCont -= 50;
+        });
+
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector(".cabecalho");
+
+            header.classList.toggle("novofundo", window.scrollY > 100); 
+
+            header.classList.toggle("novofundo5", window.scrollY > yCont);
+        });
+
+        window.addEventListener("scroll", function(){
+
+            var nav = document.querySelector(".nav-itens");
+            
+            nav.classList.toggle("indicador-quem", window.scrollY > 550 && window.scrollY < 1200);
+
+            nav.classList.toggle("indicador-hab", window.scrollY > 1200 && window.scrollY < 1800);
+
+            nav.classList.toggle("indicador-proj", window.scrollY > 1800 && window.scrollY < yCont );
+
+            nav.classList.toggle("indicador-contato", window.scrollY > yCont);
+
+            
+        });       
+    </script>
+
+    <main class="class-main">
+
+        <section class="conteudo-principal" id="id-main">
+
+            <div class="principal-nomes">
+
+                <div class="principal-textos">
+
+                   
+                    <h1 class="principal-h1">
+                        &lt;Olá, me chamo
+                        <br>
+                        <strong class="principal-meunome">
+                            Cleyton S. Costa/&gt;
+                        </strong>
+                    </h1>
+
+                    <h3 class="principal-h3">
+                        Junior Front-End Developer HTML | CSS | Javascript | Node | Git | Github | Accounting
+                    </h3>
+
+                </div>
+
+                <div class="div-botoes">
+
+                    <button class="botao-contato">
+                        <a href="#id-contatos">Contato</a>
+                    </button>
+
+                    <button class="botao-projetos">
+                        <span><a href="#id-projetos">Projetos</a></span>
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="div-foto-perfil">
+                <img src="profile.png" alt="Foto de Cleyton S. Costa" class="foto-perfil">
+            </div>
+            
+        </section>
+
+
+        <section class="conteudo-quemsou" id="id-quemsou">
+
+            <div class="texto-minhavida">
+                <h1 class="titulos-h1">
+                    Quem Sou?
+                </h1>
+
+                <p class="meu-texto">
+                    <br>
+                    Sou Bacharel em Ciências Contábeis formado pela Faculdade de Ciências e Tecnologia de Teresina - FACET, tenho um pouco de experiência em Contabilidade Pública e Privada e Microsoft Excel Avançado. 
+                    Estudei HTML e CSS, e atualmente estou bastante focado e estudando JAVASCRIPT.
+                    Sou Conselheiro Tutelar na garantia dos direitos de crianças e adolescentes. 
+                    Em alguns períodos dou assessoria à MEIs, e faço declarações de Imposto de Renda Pessoa Física - IRPF.
+                    Atualmente estou estou voltado ao desenvimento Web, com pretensão em crescer nesta área.
+                </p>
+            </div>          
+
+            <div class="div-imagemquemsou">
+                <img src="interrogation.png" alt="Imagem quem sou" class="imagem-quemsou">
+            </div>
+        </section>
+
+        <section class="conteudo-habilidades" id="id-hab">  
+            
+                <h1 class="titulos-h1">
+                    Habilidades
+                </h1>
+
+                <div class="div-habilidades">
+
+    
+                    <div class="div-web div">
+
+                        <div class="div-inicial-web">
+                            <p class="titulo-box">Web</p>
+                        </div>
+
+                        <div class="div-segunda-habilidades">
+                            <abbr title="CSS"><img src="logos_css-3.png"></abbr>
+
+                            <abbr title="Linguagem JavaScrip"><img src="logos_javascript.png"></abbr>
+
+                            <abbr title="HTML"><img src="logos_html-5.png"></abbr>
+                        </div>
+                    </div>
+    
+                </div>
+
+        </section>
+
+        <section class="conteudo-projetos" id="id-projetos">
+
+            <h1 class="titulos-h1">
+                Projetos
+            </h1>
+
+            <div class="projetos-details">
+
+                   
+                <details class="item-details">
+                    <summary>Web</summary>
+                    <br>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;Em manutenção :( </p>
+                </details>
+            </div>
+
+            
+
+        </section>
+
+        <section class="conteudo-contatos" id="id-contatos">
+
+    
+            <h1 class="titulos-h1 entre-contato">
+                Entre em Contato
+            </h1>
+
+            <div class="conteudo-nomes-contatos">
+
+                <p class="titulo-da-div-contatos">Redes sociais e formas de contato: </p>
+
+                <div class="links-contatos">
+
+                    <div class="contatos-primeira-coluna">
+
+                        <div class="contact">
+                            <img src="git.png" alt="logo do Github" class="soon-Github">
+                            <a href="https://github.com/Cleyton-1995" target="_blank" class="buttom-network">Cleyton-1995</a>
+                        </div>
+
+                        <div class="contact">
+                            <img src="gmail.png" alt="logo do gmail" class="soon-gmail">
+                            <a href="mailto:cleytonotyelc1995@gmail.com" target="_blank" class="buttom-network">cleytonotyelc1995@gmail.com</a>
+                        </div>
+                    
+                        <div class="contact">
+                            <img src="insta.png" alt="logo do instagram" class="soon-instagram">
+                            <a href="https://www.instagram.com/cleyton_notyelc" target="_blank" class="buttom-network">@cleyton_notyelc</a>
+                        </div>
+                    
+                        <div class="contact">
+                            <img src="linkedin.png" alt="logo do Linkedin" class="soon-Linkedin">
+                            <a href="https://www.linkedin.com/in/cleyton-costa-80960b20a" target="_blank" class="buttom-network">Cleyton Costa</a>
+                      </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+        </section>
+
+    </main>
+
+    <script src="CSC.js"></script>
+  
+    <footer>
+        <p>
+            &copy; Criado e desenvolvido por Cleyton S. Costa
+        </p>
+    </footer>
+
+</body>
+</html>
